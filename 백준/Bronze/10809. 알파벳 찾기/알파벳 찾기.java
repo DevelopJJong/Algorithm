@@ -1,12 +1,14 @@
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String S = sc.nextLine();
-        for (char s = 'a'; s <= 'z'; s++) { // 'a'부터 'z'까지 검사한다.
-            System.out.printf((S.indexOf(s)) + " ");//s의 위치를 검사하고 출력한다.
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String S = br.readLine();
+        for (char s = 'a'; s <= 'z'; s++) {
+            System.out.printf((S.indexOf(s)) + " ");
         }
     }
 
